@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e54b9ef55e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>MyWeather App</title>
+  </head>
+
+  <body>
+    <div class="card" style="width: 750px">
+      <div class="card-body">
+        MyWeather App
+        <div class="form">
+          <form id="search-form">
+            <input
+              type="text"
+              placeholder="Enter a city"
+              autocomplete="off"
+              autofocus="on"
+              id="enter-city"
+            />
+
+            <input type="submit" value="search" />
+          </form>
+        </div>
+
+        <h1 id="current-date"></h1>
+        <h2 id="city"></h2>
+        <br />
+        <p>
+          <span class="temperature" id="temperature"></span>
+          °C
+          <i class="far fa-sun"></i>
+        </p>
+        <br />
+        <p1 id="description"></p1>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              Sun Dec 6 <br />
+              <i class="far fa-sun"></i> <br />
+              8° / 5°<br />
+              sunny
+            </div>
+            <div class="col">
+              Mon Dec 7 <br />
+              <i class="far fa-sun"></i> <br />
+              3° / -2°<br />
+              sunny
+            </div>
+            <div class="col">
+              Tue Dec 7<br />
+              <i class="far fa-snowflake"></i> <br />
+              2° / -1° <br />
+              snowy
+              <br />
+            </div>
+            <div class="col">
+              Wed Dec 8 <br />
+              <i class="far fa-sun"></i> <br />
+              2° / -1° <br />
+              sunny
+              <br />
+            </div>
+            <div class="col">
+              Thu Dec 9 <br />
+              <i class="far fa-sun"></i> <br />
+              3° / 1° <br />
+              sunny
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
